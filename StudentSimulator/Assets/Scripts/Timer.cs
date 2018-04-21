@@ -28,6 +28,7 @@ public class Timer : MonoBehaviour {
         else
         { 
 			GetComponent<TextMeshPro>().text = "KONIEC.";
+            GameController.Instance.GameOver();
 		}
 		
 	}

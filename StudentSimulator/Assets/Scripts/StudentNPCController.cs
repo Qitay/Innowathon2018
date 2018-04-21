@@ -3,19 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class StudentController : MonoBehaviour {
+public class StudentNPCController : MonoBehaviour
+{
 
     public int lives;
 
-	void Start () {
+    void Start()
+    {
         lives = 3;
-	}
+    }
 
-	void Update () {
-     
-	}
+    void Update()
+    {
+        Debug.Log(lives);
+    }
 
-    void OnTriggerEnter(Collider collider) {
+    void OnTriggerEnter(Collider collider)
+    {
+        if(collider.gameObject.name.StartsWith("Crumple_Sphere"))
+        {
+            lives--;
+        }
         Debug.Log(collider.gameObject.name);
         //GameController.Instance.Punish();
         /*if(collision.gameObject.name == "ostry" && przypal) {
