@@ -5,7 +5,7 @@ using UnityEngine;
 public class BackgroundMusic : MonoBehaviour {
 
     public float MUSICVOLUME = 0.1f;
-
+    public static BackgroundMusic Instance;
     public AudioClip indangerMusic;
     public AudioClip calmMusic;
     AudioSource music;
@@ -37,6 +37,19 @@ public class BackgroundMusic : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+
+    }
+    void Awake()
+    {
+        if (!Instance)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
     }
 }

@@ -32,6 +32,7 @@ public class ProfessorScript : MonoBehaviour {
         maxAnimWait = animationLength * 3.5f;
 
         GenAnimTime();
+        BackgroundMusic.Instance.playMusic(1);
 
     }
 
@@ -43,11 +44,13 @@ public class ProfessorScript : MonoBehaviour {
         {
             anim.enabled = true;
             animationStart = 0.0f;
+            BackgroundMusic.Instance.playMusic(0);
         }
         if(Timer.Instance.secondsToEnd <= animationEnd)
         {
             anim.enabled = false;
             GenAnimTime();
+            BackgroundMusic.Instance.playMusic(1);
         }
 
     }
