@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using TMPro;
 
 public class Timer : MonoBehaviour {
 	public float secondsToEnd = 20f;
-
-	// Use this for initialization
-	void Start()
+    // Use this for initialization
+    void Start()
 	{
-		
-	}
+    
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -22,13 +22,12 @@ public class Timer : MonoBehaviour {
 		    String minutesStr = minutes.ToString().PadLeft(2, '0');
 		    String secondsStr = seconds.ToString().PadLeft(2, '0');
 		
-			GetComponent<TextMesh>().text = "Czas do końca kolokwium\n" + 
+			GetComponent<TextMeshPro>().text = "Koniec za:\n" + 
                 minutesStr + ":" + secondsStr;
 		}
         else
         { 
-			GetComponent<TextMesh>().text = "Czas do końca kolokwium\n" +
-                "KONIEC.";
+			GetComponent<TextMeshPro>().text = "KONIEC.";
 		}
 		
 	}
