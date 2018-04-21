@@ -46,7 +46,7 @@ public class GameController : MonoBehaviour
         playerLives--;
         if(playerLives > 0)
         {
-            zlapany = false;
+            zlapany = true;
             CJNarzekanie.Instance.Narzekaj();
         }
         else
@@ -58,6 +58,8 @@ public class GameController : MonoBehaviour
     public void GameOver()
     {
         Debug.Log("LOSE");
+        BackgroundMusic.Instance.playMusic(2);
+        Timer.Instance.secondsToEnd = 0f;
     }
 
     public void MaybePunish()

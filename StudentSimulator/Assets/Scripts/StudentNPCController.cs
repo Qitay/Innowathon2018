@@ -34,7 +34,7 @@ public class StudentNPCController : MonoBehaviour
             else
             {
                 cursingPlaySound();
-                Destroy(gameObject);
+                Destroy(gameObject, 3.0f);
             }
         }
         //Debug.Log(collider.gameObject.name);

@@ -9,6 +9,21 @@ public class ControllerGrabObject : MonoBehaviour {
     private GameObject collidingObject;
     // 2
     private GameObject objectInHand;
+    public AudioClip[] hitwithPaper;
+    public AudioClip[] pickupPaper;
+    AudioSource audio;
+
+    public void hitWithPaperPlaySound() //gdy studenta trafi kulka
+    {
+        audio.clip = hitwithPaper[Random.Range(0, hitwithPaper.Length)];
+        audio.Play();
+    }
+
+    public void pickUpPaperPlaySound() //gdy podnoszona jest kulka
+    {
+        audio.clip = pickupPaper[Random.Range(0, pickupPaper.Length)];
+        audio.Play();
+    }
 
     private SteamVR_Controller.Device Controller
     {
@@ -86,6 +101,7 @@ public class ControllerGrabObject : MonoBehaviour {
         var joint = AddFixedJoint();
         joint.connectedBody = objectInHand.GetComponent<Rigidbody>();
         GameController.Instance.ZrobPrzypal();
+        pickUpPaperPlaySound();
     }
 
     // 3
@@ -114,5 +130,10 @@ public class ControllerGrabObject : MonoBehaviour {
         GameController.Instance.AnulujPrzypal();
     }
 
+    void Start()
+    {
+        audio = GetComponent<AudioSource>();
+        audio.volume = 1.0f;
+    }
   
 }

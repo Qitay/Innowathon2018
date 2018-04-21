@@ -8,6 +8,7 @@ public class BackgroundMusic : MonoBehaviour {
     public static BackgroundMusic Instance;
     public AudioClip indangerMusic;
     public AudioClip calmMusic;
+    public AudioClip loseMusic;
     AudioSource music;
 
     public void playMusic(int number)   // playMusic(0); by wywolac muzyke grozna  
@@ -21,6 +22,11 @@ public class BackgroundMusic : MonoBehaviour {
         if (number == 1)
         {
             music.clip = calmMusic;
+            music.Play();
+        }
+        if(number == 2)
+        {
+            music.clip = loseMusic;
             music.Play();
         }
 
