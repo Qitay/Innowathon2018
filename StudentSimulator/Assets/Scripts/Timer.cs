@@ -5,11 +5,13 @@ using System;
 using TMPro;
 
 public class Timer : MonoBehaviour {
-	public float secondsToEnd = 20f;
+
+    public float secondsToEnd;
+
+    public static Timer Instance;
     // Use this for initialization
     void Start()
 	{
-    
     }
 	
 	// Update is called once per frame
@@ -26,10 +28,24 @@ public class Timer : MonoBehaviour {
                 minutesStr + ":" + secondsStr;
 		}
         else
-        { 
+        {
+            secondsToEnd = 0.0f;
 			GetComponent<TextMeshPro>().text = "KONIEC.";
-            GameController.Instance.GameOver();
+            //GameController.Instance.GameOver();
 		}
 		
 	}
+    void Awake()
+    {
+        if (!Instance)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+    }
 }
