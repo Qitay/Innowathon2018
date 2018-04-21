@@ -9,5 +9,9 @@ public class TestScript_DELETE : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject);
+        if(Controller.jestprzycisk)
+        {
+            ControllerGrabObject();
+        }
     }
 }
