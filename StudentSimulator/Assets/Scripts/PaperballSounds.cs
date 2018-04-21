@@ -11,13 +11,13 @@ public class PaperballSounds : MonoBehaviour
 
     public void hitWithPaperPlaySound() //gdy studenta trafi kulka
     {
-        audio.clip = hitwithPaper[Random.Range(0, hitwithPaper.Length)];
+        audio.clip = hitwithPaper[Random.Range(0, hitwithPaper.Length-1)];
         audio.Play();
     }
 
     public void pickUpPaperPlaySound() //gdy podnoszona jest kulka
     {
-        audio.clip = pickupPaper[Random.Range(0, pickupPaper.Length)];
+        audio.clip = pickupPaper[Random.Range(0, pickupPaper.Length-1)];
         audio.Play();
     }
 

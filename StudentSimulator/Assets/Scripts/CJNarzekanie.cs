@@ -38,7 +38,7 @@ public class CJNarzekanie : MonoBehaviour
 
     public void Narzekaj()
     {
-        audio.clip = narzekanie[Random.Range(0, narzekanie.Length)];
+        audio.clip = narzekanie[Random.Range(0, narzekanie.Length-1)];
         audio.Play();
     }
 }

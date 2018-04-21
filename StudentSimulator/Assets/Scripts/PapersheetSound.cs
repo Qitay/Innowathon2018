@@ -20,7 +20,7 @@ public class PapersheetSound : MonoBehaviour {
         //AudioSource.PlayClipAtPoint(writingAudio[0], transform.position, 1.5f);
         if(audio.isPlaying == false)
         {
-            audio.clip = writingAudio[Random.Range(0,writingAudio.Length)];
+            audio.clip = writingAudio[Random.Range(0,writingAudio.Length-1)];
             audio.Play();
         }
 	}

@@ -17,7 +17,7 @@ public class ProfessorScript : MonoBehaviour {
 
     public void marudzenieSound() //gdy marudzi/nas przyłapie
     {
-        audio.clip = marudzenieAudio[Random.Range(0, marudzenieAudio.Length)];
+        audio.clip = marudzenieAudio[Random.Range(0, marudzenieAudio.Length-1)];
         audio.Play();
     }
 

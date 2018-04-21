@@ -46,13 +46,13 @@ public class StudentNPCController : MonoBehaviour
 
     public void onHitAudioPlaySound() //gdy studenta trafi kulka i go boli :3
     {
-        audio.clip = onhitAudio[Random.Range(0, onhitAudio.Length)];
+        audio.clip = onhitAudio[Random.Range(0, onhitAudio.Length-1)];
         audio.Play();
     }
 
     public void cursingPlaySound() //gdy student traci zycie i zostanie usuniety
     {
-        audio.clip = cursingAudio[Random.Range(0, cursingAudio.Length)];
+        audio.clip = cursingAudio[Random.Range(0, cursingAudio.Length-1)];
         audio.Play();
     }
 }
