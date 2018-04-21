@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: de9590aff77416046b9589c0fbec50e4
+timeCreated: 1524313138
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CMU compliant skeleton
+    100002: curlyMesh
+    100004: eyebrow005Mesh
+    100006: eyelashes04Mesh
+    100008: female_elegantsuit01Mesh
+    100010: Head
+    100012: high-polyMesh
+    100014: Hips
+    100016: LeftArm
+    100018: LeftFingerBase
+    100020: LeftFoot
+    100022: LeftForeArm
+    100024: LeftHand
+    100026: LeftHandFinger1
+    100028: LeftLeg
+    100030: LeftShoulder
+    100032: LeftToeBase
+    100034: LeftUpLeg
+    100036: LHipJoint
+    100038: LowerBack
+    100040: LThumb
+    100042: Neck
+    100044: Neck1
+    100046: RHipJoint
+    100048: RightArm
+    100050: RightFingerBase
+    100052: RightFoot
+    100054: RightForeArm
+    100056: RightHand
+    100058: RightHandFinger1
+    100060: RightLeg
+    100062: RightShoulder
+    100064: RightToeBase
+    100066: RightUpLeg
+    100068: RThumb
+    100070: Spine
+    100072: Spine1
+    100074: //RootNode
+    100076: student4Mesh
+    100078: teeth_baseMesh
+    100080: tongue01Mesh
+    400000: CMU compliant skeleton
+    400002: curlyMesh
+    400004: eyebrow005Mesh
+    400006: eyelashes04Mesh
+    400008: female_elegantsuit01Mesh
+    400010: Head
+    400012: high-polyMesh
+    400014: Hips
+    400016: LeftArm
+    400018: LeftFingerBase
+    400020: LeftFoot
+    400022: LeftForeArm
+    400024: LeftHand
+    400026: LeftHandFinger1
+    400028: LeftLeg
+    400030: LeftShoulder
+    400032: LeftToeBase
+    400034: LeftUpLeg
+    400036: LHipJoint
+    400038: LowerBack
+    400040: LThumb
+    400042: Neck
+    400044: Neck1
+    400046: RHipJoint
+    400048: RightArm
+    400050: RightFingerBase
+    400052: RightFoot
+    400054: RightForeArm
+    400056: RightHand
+    400058: RightHandFinger1
+    400060: RightLeg
+    400062: RightShoulder
+    400064: RightToeBase
+    400066: RightUpLeg
+    400068: RThumb
+    400070: Spine
+    400072: Spine1
+    400074: //RootNode
+    400076: student4Mesh
+    400078: teeth_baseMesh
+    400080: tongue01Mesh
+    2100000: student4
+    2100002: curly
+    2100004: high-poly
+    2100006: eyebrow005
+    2100008: eyelashes04
+    2100010: teeth_base
+    2100012: tongue01
+    2100014: female_elegantsuit01
+    4300000: student4Mesh
+    4300002: curlyMesh
+    4300004: high-polyMesh
+    4300006: eyebrow005Mesh
+    4300008: eyelashes04Mesh
+    4300010: teeth_baseMesh
+    4300012: tongue01Mesh
+    4300014: female_elegantsuit01Mesh
+    9500000: //RootNode
+    13700000: curlyMesh
+    13700002: eyebrow005Mesh
+    13700004: eyelashes04Mesh
+    13700006: female_elegantsuit01Mesh
+    13700008: high-polyMesh
+    13700010: student4Mesh
+    13700012: teeth_baseMesh
+    13700014: tongue01Mesh
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
