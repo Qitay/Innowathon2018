@@ -12,7 +12,7 @@ public class PapersheetSound : MonoBehaviour {
     void Start () {
         //transform.localScale = new Vector3(0.01379639f, 0.05f, 0.01840163f);
         audio = GetComponent<AudioSource>();
-        audio.volume = 0.1f;
+        audio.volume = 1.0f;
     }
 	
 	// Update is called once per frame
