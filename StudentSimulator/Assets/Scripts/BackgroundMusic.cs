@@ -4,68 +4,39 @@ using UnityEngine;
 
 public class BackgroundMusic : MonoBehaviour {
 
-    public AudioClip[] creepyMusic;
-    public AudioClip[] royaltyMusic;
-    AudioSource audio, music;
+    public float MUSICVOLUME = 0.1f;
 
-    int musicState; // 0 -start, 1- normalny, 2-konczenie -- [ascending, normal, descending] = [0,1,2]
+    public AudioClip indangerMusic;
+    public AudioClip calmMusic;
+    AudioSource music;
 
-    public void playMusic() //muzyka grozna(done) sielankowa(todo)
+    public void playMusic(int number)   // playMusic(0); by wywolac muzyke grozna  
+                                        // playMusic(1); by wywolac muzyke spokojna
     {
-        music.volume = 0.05f;
-        if (musicState == 0)
+        if (number == 0)
         {
-            music.clip = creepyMusic[musicState];
+            music.clip = indangerMusic;
             music.Play();
-            musicState = 1;
         }
-        if (musicState == 1)
+        if (number == 1)
         {
-            music.clip = creepyMusic[musicState];
+            music.clip = calmMusic;
             music.Play();
-            //musicState = 2; //do tej zmiennej trzeba przypisac te wartosc gdy prowadzacy przestanie sie na nas gapic i bedzie spokojnie
-        }
-        if (musicState == 2)
-        {
-            music.clip = creepyMusic[musicState];
-            music.Play();
-            musicState = 3;
         }
 
-        //sielankowa
-        if (musicState == 3)
-        {
-            //clip na dreamy ascending
-            //play
-            musicState = 4;
-        }
-        if (musicState == 4)
-        {
-            //clip na dreamy normal
-            //play
-            //musicState = 5; //do tej zmiennej trzeba przypisac te wartosc gdy prowadzacy zaczyna sie na nas gapic
-        }
-        if (musicState == 5)
-        {
-            //clip na dreamy descending
-            //play
-            musicState = 0;
-        }
     }
 
     // Use this for initialization
     void Start()
-    {
+    { 
         music = GetComponent<AudioSource>();
-        musicState = 0;
+        music.volume = MUSICVOLUME;
     }
     
 	
 	// Update is called once per frame
-	void Update () {
-        if (music.isPlaying == false)
-        {
-            playMusic();
-        }
+	void Update ()
+    {
+
     }
 }
