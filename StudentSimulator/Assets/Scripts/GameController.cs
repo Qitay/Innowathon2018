@@ -7,6 +7,9 @@ public class GameController : MonoBehaviour
 
     //public ref StudentController student;
     public bool running;
+    public int playerLives;
+    public bool przypal;
+    public bool zlapany;
 
     public static GameController Instance;
 
@@ -40,11 +43,39 @@ public class GameController : MonoBehaviour
 
     public void Punish()
     {
-        Debug.Log("Jeszcze jak!");
+        playerLives--;
+        if(playerLives > 0)
+        {
+            zlapany = false;
+            CJNarzekanie.Instance.Narzekaj();
+        }
+        else
+        {
+            GameOver();
+        }
     }
 
     public void GameOver()
     {
         Debug.Log("LOSE");
+    }
+
+    public void MaybePunish()
+    {
+        if(przypal && !zlapany)
+        {
+            Punish();
+        }
+    }
+
+    public void ZrobPrzypal()
+    {
+        przypal = true;
+        zlapany = false;
+    }
+    public void AnulujPrzypal()
+    {
+        przypal = false;
+        zlapany = false;
     }
 }

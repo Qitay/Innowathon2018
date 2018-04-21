@@ -85,6 +85,7 @@ public class ControllerGrabObject : MonoBehaviour {
         // 2
         var joint = AddFixedJoint();
         joint.connectedBody = objectInHand.GetComponent<Rigidbody>();
+        GameController.Instance.ZrobPrzypal();
     }
 
     // 3
@@ -110,6 +111,7 @@ public class ControllerGrabObject : MonoBehaviour {
         }
         // 4
         objectInHand = null;
+        GameController.Instance.AnulujPrzypal();
     }
 
   

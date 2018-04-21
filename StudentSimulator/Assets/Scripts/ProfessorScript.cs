@@ -27,7 +27,7 @@ public class ProfessorScript : MonoBehaviour {
         audio = GetComponent<AudioSource>();
         anim.enabled = false;
         animationLength = anim.runtimeAnimatorController.animationClips[0].length;
-        Debug.Log(animationLength);
+        //Debug.Log(animationLength);
         minAnimWait = animationLength * 1.5f;
         maxAnimWait = animationLength * 3.5f;
 
@@ -38,8 +38,6 @@ public class ProfessorScript : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-
-
         if(Timer.Instance.secondsToEnd <= animationStart)
         {
             anim.enabled = true;
@@ -71,7 +69,7 @@ public class ProfessorScript : MonoBehaviour {
                 animationEnd = animationStart - animationLength;
             }
             
-            Debug.Log("Time for next anim: " + animationStart);
+           // Debug.Log("Time for next anim: " + animationStart);
         }
         else
         {

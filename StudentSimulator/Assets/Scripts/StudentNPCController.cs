@@ -37,7 +37,7 @@ public class StudentNPCController : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        Debug.Log(collider.gameObject.name);
+        //Debug.Log(collider.gameObject.name);
         //GameController.Instance.Punish();
         /*if(collision.gameObject.name == "ostry" && przypal) {
             GameController::Instance().Punish();
